@@ -1,0 +1,3 @@
+gcc -c .\lista.c .\lista.h
+gcc  .\main.c .\lista.o -o  app
+.\app.exe
