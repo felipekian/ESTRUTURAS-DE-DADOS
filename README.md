@@ -27,3 +27,16 @@ gcc main.c pilha.o -o app
 
 ![](https://github.com/felipekian/ESTRUTURAS-DE-DADOS/blob/master/Pilha_Dinamica/Imagem/Pilha.png)
 ---
+
+# _LISTA DINÂMICA_
+```
+COMPILAR:
+
+gcc -c .\lista.c .\lista.h
+gcc  .\main.c .\lista.o -o  app
+.\app
+```
+## [_*LISTA DINÂMICA EM C*_](https://github.com/felipekian/ESTRUTURAS-DE-DADOS/tree/master/Lista_Dinamica)
+
+![](https://github.com/felipekian/ESTRUTURAS-DE-DADOS/blob/master/Lista_Dinamica/Imagem/Lista.png)
+---
