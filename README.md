@@ -38,5 +38,5 @@ gcc  .\main.c .\lista.o -o  app
 ```
 ## [_*LISTA DINÂMICA EM C*_](https://github.com/felipekian/ESTRUTURAS-DE-DADOS/tree/master/Lista_Dinamica)
 
-![](https://github.com/felipekian/ESTRUTURAS-DE-DADOS/blob/master/Lista_Dinamica/Imagem/Lista.png)
+![](https://github.com/felipekian/ESTRUTURAS-DE-DADOS/blob/master/Lista_Dinamica/Imagem/lista.png)
 ---
