@@ -1,3 +1,9 @@
+/**
+ *  Projeto: Lista Encadeada Dinamicamente Alocado
+ *  Autor: Felipe Derkian de Sousa Freitas
+ *  Data: 03/05/2020
+ */
+
 
 typedef struct node{
     int valor;

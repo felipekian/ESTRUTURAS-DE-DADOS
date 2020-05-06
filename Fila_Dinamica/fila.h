@@ -1,4 +1,9 @@
-
+/**
+ *  Projeto: Fila Dinamicamente Alocada
+ *  Autor: Felipe Derkian
+ *  E-mail: felipekian@yahoo.com.br
+ *  Data: 05/05/2020
+ */
 
 struct nodo{
 	int valor;	
@@ -15,18 +20,13 @@ typedef struct nodo Nodo;
 typedef struct fila Fila;
 
 void fila_criar(Fila *f);
-
 int fila_vazia(Fila *f);
-
 void fila_push(Fila *f, int valor);
-
 void fila_listar(Fila *f);
-
-int fila_getProxValue(Fila *f); 
-
+int fila_getProxValue(Fila *f);
 void fila_pop(Fila *f);
-
 int fila_existeValor(Fila *f, int valor);
+void fila_limpar(Fila *f);
 
 
 
