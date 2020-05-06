@@ -21,21 +21,23 @@ int main(int argc, char const *argv[])
 
     while(1){
         int v, op;
-        printf("\n\n1 - push_front\n2 - push_back\n>> ");
+        printf("\n\n1 - push_front\n2 - push_back\n3 - push_In_Order\n>> ");
         scanf("%d", &op);
         
-        if(op == -1) break;
-
-        
+        if(op == -1) break;        
 
         if( op == 1 ) {
 	    	printf("Valor >> ");
-            	scanf("%d", &v);
-            	lista_push_front(&l, v);
+            scanf("%d", &v);
+            lista_push_front(&l, v);
         } else if( op == 2 ){
-		printf("Valor >> ");
+		    printf("Valor >> ");
         	scanf("%d", &v);
-            	lista_push_back(&l, v);
+            lista_push_back(&l, v);
+        } else if(op == 3){
+            printf("Valor >> ");
+        	scanf("%d", &v);
+            lista_push_order(&l, v);
         } else {
             printf("Opcao invalida\n");
         }

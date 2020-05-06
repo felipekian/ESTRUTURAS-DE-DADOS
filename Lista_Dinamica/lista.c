@@ -87,20 +87,59 @@ void lista_push_back(Lista *l, int valor)
     }
 }
 
+void lista_push_order(Lista *l, int valor){
+
+    Node *novo = (Node *)malloc(sizeof(Node));
+
+    if (novo == NULL)
+    {
+        printf("Falha ao alocar memória\n");
+    }
+
+    novo->proximo = NULL;
+    novo->valor = valor;
+
+    if (lista_vazia(l))
+    {
+        l->cabeca = l->calda = novo;
+    }
+    else{
+
+        if( l->cabeca->valor > valor ){
+            novo->proximo = l->cabeca;
+            l->cabeca = novo;
+            return;
+        }
+        else if(l->calda->valor < valor){
+            l->calda->proximo = novo;
+            l->calda = novo;
+            return;
+        }
+        else{
+            Node *aux = l->cabeca;
+
+            while( aux->proximo->valor < valor ) aux = aux->proximo;
+
+            novo->proximo = aux->proximo;
+            aux->proximo = novo;            
+            return;
+        }
+    }
+}
+
 int lista_verifica(Lista *l, int valor){
 
     Node *aux = l->cabeca;
 
     while( 1 ){
-
         if( aux->valor == valor ) return 1;
 
         if( aux->proximo == NULL ) break;
 
         aux = aux->proximo;
     }
-
 }
+
 void lista_liberar(Lista *l){
 
     Node *aux = NULL;
