@@ -5,8 +5,8 @@
 ```
 COMPILAR: 
 
-gcc fila_dinamica.c fila_dinamica.h -c
-gcc main.c fila_dinamica.o -o app 
+gcc fila.c fila.h -c
+gcc main.c fila.o -o app 
 .\app
 ```
 ## [_*FILA DINÂMICA EM C*_](https://github.com/felipekian/ESTRUTURAS-DE-DADOS/tree/master/Fila_Dinamica)
