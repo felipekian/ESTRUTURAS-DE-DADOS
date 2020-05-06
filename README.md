@@ -32,8 +32,8 @@ gcc main.c pilha.o -o app
 ```
 COMPILAR:
 
-gcc -c .\lista.c .\lista.h
-gcc  .\main.c .\lista.o -o  app
+gcc -c lista.c lista.h
+gcc  main.c lista.o -o  app
 .\app
 ```
 ## [_*LISTA DINÂMICA EM C*_](https://github.com/felipekian/ESTRUTURAS-DE-DADOS/tree/master/Lista_Dinamica)
